@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/Css/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <main class="main">
+        <div class="perfil" id="perfil">
+            <div id="img_portada"></div>
+            <img src="" id="img-user" alt="">
+            <h1 id="nombre_completo"></h1>
+            <span class="Modelo-user" id="Modelo-user"></span>
+            <button id="exit"><i class="fa fa-sign-out"></i> Salir</button>
+            <a href=""><i class="fa fa-shop"></i> Hacer Un Pedido</a>
+        </div>
+        <div class="informacion" id="informacion">
+            <label for="">Nombre Completo:</label >
+            <input type="text" id="user" value="" disabled>
+            <label for="">Numero De Celular:</label >
+            <input type="text" id="numero" disabled>
+            <label for="">DNI:</label>
+            <input type="text" id="dni" disabled>
+            <div class="divisor">
+            <i class="fa fa-question">
+                <div class="question">
+                    <h2>? Curiosidad:</h2>
+                        <p>esta parte permite que los Profecionales puedan saber la ubicacion y ver si pueden trabajar en ello</p>
+                </div>
+            </i>
+                <h2>Requerimos Obligatorios:</h2>
+            </div>
+            <label for="">Region:</label>
+            <select name="Región" id="Región">
+                <option value="null" disabled selected>Seleciona Tu Region</option>
+                <option value="cusco">cusco</option>
+            </select>
+            <label for="">Provincia:</label>
+            <select name="provincia" id="provincia">
+                <option value="null" disabled selected>Seleciona Tu Provincia</option>
+                <option value="Acomayo">Acomayo</option>
+                <option value="Anta">Anta</option>
+                <option value="Calca">Calca</option>
+                <option value="Canas">Canas</option>
+                <option value="Canchis">Canchis</option>
+                <option value="Cusco">Cusco</option>
+                <option value="Chumbivilcas">Chumbivilcas</option>
+                <option value="Espinar">Espinar</option>
+                <option value="La Convención">La Convención</option>
+                <option value="Paruro">Paruro</option>
+                <option value="Paucartambo">Paucartambo</option>
+                <option value="Quispicanchi">Quispicanchi</option>
+                <option value="Urubamba" hidden>Urubamba</option>
+            </select>
+            <label for="">Distrito De ?</label>
+            <input type="text" id="distrito">
+            <label for="">Proyecto De:</label>
+            <select name="Tipo-De-Proyecto" id="Tipo-De-Proyecto" onchange="mostrarInput()">
+                <option value="null" disabled selected>Tipo De Proyecto</option>
+                <option value="publico">Público</option>
+                <option value="privado">Privado</option>
+            </select>
+            <div id="input-container" style="display: none;">
+                <label for="otroInput">Algo Como ?:</label>
+                <input type="text" id="otroInput" name="otroInput">
+            </div>
+        </div>
+    </main>
+
+    <div id="mensajes-container" style="display: none;"></div>
+    <script>
+        function mostrarInput() {
+          var select = document.getElementById("Tipo-De-Proyecto");
+          var inputContainer = document.getElementById("input-container");
+        
+          if (select.value === "publico" || select.value === "privado") {
+            inputContainer.style.display = "block";
+          } else {
+            inputContainer.style.display = "none";
+          }
+        }
+    </script>
+    <script src="./assets/Data/BaseData.js"></script>
+    <script src="./assets/Js/login.js"></script>
+</body>
+</html>

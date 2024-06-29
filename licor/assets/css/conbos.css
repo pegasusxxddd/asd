@@ -1,0 +1,236 @@
+
+.mejores{
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.mejores .carta{
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    background: #dab11f;
+}
+
+.mejores .carta img{
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.mejores .carta .info{
+    text-align: center;
+    width: 300px;
+}
+
+.mejores .carta .info h2{
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.mejores .carta .info i{
+    color: #000;
+    font-size: 1.4em;
+}
+
+.mejores .carta .calculo{
+    display: block;
+    margin-top: 5px; 
+    color: #000;
+}
+
+
+#precio_trago{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 50px;
+    line-height: 30px;
+    color: #000;
+    background: #fcd165;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 1em;
+    z-index: 1;
+}
+
+.carrito{
+    max-width: 100%;
+    display: none;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: rgb(0, 0, 0);
+}
+
+.carrito > .close{
+    z-index: 2;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.carrito h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carrito .close::before{
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 35px;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    background: url("../img/Polygon.png") center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(90deg);
+    height: 45px;
+}
+
+.card_cb{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 380px;
+    background: #000;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.card_cb img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.card_cb .img{
+    width: 150px;
+    height: 100%;
+}
+.card_cb .info{
+    margin-left: 10px;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+}
+
+.card_cb .info h2{
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.card_cb .info li{
+    text-align: left;
+    font-size: 1em;
+    margin-top: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.card_cb .info li::before{
+    margin-left: 5px;
+    content: "⦁ ";
+}
+
+.card_cb span{
+    margin-top: 10px;
+    display: block;
+    background: red;
+    line-height: 30px;
+}
+
+.card_cb button{
+    margin-top: 5px;
+    display: block;
+    background: rgb(43, 255, 0);
+    line-height: 30px;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 800px) {
+    .mejores{
+        max-width: 100%;
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .mejores .carta{
+        margin: 10px;
+        position: relative;
+        border-radius: 10px;
+        padding: 10px;
+        display: block;
+        width: 400px;
+        height: auto;
+        background: #dab11f;
+    }
+    
+    .mejores .carta img{
+        max-width: 100%;
+        width: 200px;
+        height: 2  00px;
+    }
+    
+    .mejores .carta .info{
+        text-align: center;
+        width: 300px;
+    }
+    
+    .mejores .carta .info h2{
+        font-size: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        color: #000;
+        margin-bottom: 5px;
+    }
+    
+    .mejores .carta .info i{
+        color: #000;
+        font-size: 1.4em;
+    }
+    
+    .mejores .carta .calculo{
+        display: block;
+        margin-top: 5px; 
+        color: #000;
+    }
+}

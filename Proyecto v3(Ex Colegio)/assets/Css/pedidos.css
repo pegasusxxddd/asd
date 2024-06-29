@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+textarea{
+    resize: none;
+}
+
+input, select{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #000;
+}
+
+.cartas{
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    gap: 10px;
+    height: 100vh;
+    place-content: center; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carta{
+    border-radius: 10px;
+    display: block;
+    background: #222222;
+    width: 300px;
+    height: auto;
+    padding-top: 10px;
+    margin: 10px;
+    border: #cc00ff 1px solid;
+    box-shadow: 0 0 5px #cc00ff, 0 0 10px #cc00ff, 0 0 15px #f700ff;
+}
+
+.carta.premiun{
+    border: #ffae00 1px solid;
+    box-shadow: 0 0 5px #ffae00, 0 0 10px #ffae00, 0 0 15px #ffe600;
+
+}
+
+.carta h2{
+    color: #f700ff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1;
+}
+
+.carta.premiun h2{
+    color: #ffe600;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1;
+}
